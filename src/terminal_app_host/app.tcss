@@ -1,0 +1,91 @@
+Screen {
+    background: $surface;
+}
+
+#logo-container {
+    width: 100%;
+    align: center top;
+    padding: 1 0 0 0;
+}
+
+#logo {
+    color: $accent;
+    text-style: bold;
+}
+
+#tagline {
+    text-align: center;
+    color: $text-muted;
+    text-style: italic;
+    padding: 0 0 1 0;
+}
+
+#app-list-container {
+    height: 1fr;
+    margin: 0 2;
+    border: round $accent;
+    border-title-color: $accent;
+    padding: 0 1;
+}
+
+AppItem {
+    height: 3;
+    padding: 0 1;
+    margin: 0 0 0 0;
+}
+
+AppItem:hover {
+    background: $accent 20%;
+}
+
+AppItem > .app-name {
+    text-style: bold;
+    color: $text;
+}
+
+AppItem:focus > .app-name {
+    color: $accent;
+    text-style: bold reverse;
+}
+
+.app-desc {
+    color: $text-muted;
+    text-style: italic;
+}
+
+AddAppScreen {
+    align: center middle;
+}
+
+#add-dialog {
+    width: 60;
+    height: auto;
+    max-height: 80%;
+    padding: 1 2;
+    background: $surface;
+    border: heavy $accent;
+}
+
+#dialog-border-top, #dialog-border-bot {
+    text-align: center;
+    color: $accent;
+}
+
+#dialog-title {
+    text-align: center;
+    color: $accent;
+    text-style: bold;
+}
+
+#add-dialog Input {
+    margin: 0 0 1 0;
+}
+
+#add-buttons {
+    height: 3;
+    align: center middle;
+}
+
+#add-buttons Button {
+    margin: 0 1;
+}

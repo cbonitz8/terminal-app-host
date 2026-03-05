@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "terminal-app-host"
+version = "0.1.0"
+description = "A TUI launcher for personal terminal apps"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=0.40",
+]
+
+[project.scripts]
+terminal-app-host = "terminal_app_host.__main__:main"
